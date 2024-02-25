@@ -28,7 +28,7 @@ export async function POST(req: NextRequest) {
                 firstname,
                 lastname,
                 phone,
-                dateOfBirth: new Date(dateOfBirth), // Match this with your Prisma schema
+                dateOfBirth, // Match this with your Prisma schema
             }
         });
 

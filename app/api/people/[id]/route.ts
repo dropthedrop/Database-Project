@@ -21,7 +21,7 @@ export async function GET(request: Request, context: any) {
     })
   }
   return new Response(JSON.stringify(person), {
-    status: 200,
+    status: 202,
     headers: {
       'Content-Type': 'application/json',
     },
@@ -52,7 +52,7 @@ export async function PUT(request: Request, context: any) {
         firstname,
         lastname,
         phone,
-        dateOfBirth: new Date(dateOfBirth),
+        dateOfBirth,
       },
     });
 
